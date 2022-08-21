@@ -1,0 +1,64 @@
+{
+  "name": "pug-portfolio",
+  "version": "2.0.0",
+  "description": "Static pug-generated portfolio",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "webpack-dev-server --mode=development",
+    "build": "webpack --mode=production --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcoppy/pug-portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Alex Rupp-Coppi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rcoppy/pug-portfolio/issues"
+  },
+  "homepage": "https://github.com/rcoppy/pug-portfolio#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "ci": "^2.2.0",
+    "html-loader": "^3.1.0",
+    "jquery": "^3.5.1",
+    "jstransformer-markdown-it": "^2.1.0",
+    "markdown-it": "^12.3.2",
+    "popper.js": "^1.16.1",
+    "postcss": "^8.4.13",
+    "precss": "^3.1.0",
+    "pug": "^3.0.2",
+    "waypoints": "^4.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@webdiscus/pug-loader": "^2.2.0",
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "enhanced-resolve": "^5.9.3",
+    "fibers": "^4.0.3",
+    "file-loader": "^4.3.0",
+    "glob-all": "^3.2.1",
+    "html-webpack-plugin": "^5.5.0",
+    "markdown-loader": "^8.0.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "postcss-loader": "^3.0.0",
+    "pug-html-loader": "^1.1.5",
+    "pug-walk": "^2.0.0",
+    "purgecss": "^4.1.3",
+    "purgecss-webpack-plugin": "^4.1.3",
+    "sass": "^1.26.10",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.0"
+  }
+}

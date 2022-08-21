@@ -1,0 +1,39 @@
+// colors
+$middle-blue-purple: #8e7dbeff;
+$antique-brass: #c19f87ff;
+$pacific-blue: #23B5D3ff;
+$neon-blue: #35C2F0ff;
+$champagne-pink: #E5D9D0ff;
+$black-coffee: #3b2c35ff;
+$piggy-pink: #ffdfeb;
+$cartridge-red: #F70001ff;
+$header-dark-blue: #708ad2;
+
+// assignments
+$header_color: $black-coffee;
+$navbar_color: rgba($black-coffee, 0.8);
+
+$hyperlink_color: desaturate(darken($neon-blue, 25%), 20%);
+$hyperlink_hover_color: lighten($hyperlink_color, 10%);
+
+$darkmode_hyperlink_color: saturate(lighten($neon-blue, 27%), 75%);
+$darkmode_hyperlink_hover_color: saturate(lighten($neon-blue, 30%), 100%);
+
+$text_color: $black-coffee;
+$text_background_color: desaturate(lighten($antique-brass, 10%), 15%);
+
+$code_background_color: darken($champagne-pink, 10%);
+$code_text_color: darken($middle-blue-purple, 25%);
+$code_border_radius: 4px; 
+
+$navbar_height: 10vh;
+$header_height: 30vh + $navbar_height;
+$footer_height: 20vh;
+$gallery_card_height: (100vh - $header_height - $footer_height - 6vh) / 1.5;
+
+$mobile_header_height: 65vh + $navbar_height;
+$mobile_footer_height: 40vh;
+$mobile_gallery_card_height: 40vh;
+
+
+

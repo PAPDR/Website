@@ -1,0 +1,14 @@
+include content_mixin
+
+doctype html
+
+html(lang="en")
+    include head.pug
+
+    .page-wrapper
+        include header.pug
+        +content_mixin
+            block content
+        include footer.pug
+
+        include page_scripts.pug

@@ -1,0 +1,225 @@
+//@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700|Playfair+Display&display=swap');
+//@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+
+// FYI order of imports matters
+
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap');
+
+@import "variables";
+@import "custom";
+
+@import '~bootstrap/scss/bootstrap-grid';
+@import '~bootstrap/scss/bootstrap-reboot';
+
+
+
+/*
+@include media-breakpoint-up(xs) { ... }
+@include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... }
+*/
+
+@import "microclearfix";
+@import "typography";
+
+@import "content_banner";
+
+@import "navbar";
+@import "image_frame";
+
+
+body {
+
+    // need custom offset for backgrounds on phone screens
+    @include media-breakpoint-down(sm) {
+        background-position-y: 163px;
+        background-position-x: -24px;
+    }
+
+    background-position: 0 0;
+
+    background: url('../images/cartridges_flattened.webp'), linear-gradient(180deg, $champagne-pink, transparent);
+    background-size: contain;
+    background-attachment: fixed;
+
+    position: relative;
+    min-height: 100vh;
+    
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper.content {
+    z-index: 0;
+    box-shadow: 0 0 2rem darken($middle-blue-purple, 40%);
+    min-height: 100vh - $header_height - $mobile_footer_height;
+    flex-grow: 1;
+
+    background: $champagne-pink url('../images/burningpaper_skewed.webp'); 
+    background-repeat: repeat;
+    background-size: 165%; 
+    background-attachment: fixed;
+    
+    padding-top: 1rem;
+    pointer-events: none;
+
+    @include media-breakpoint-up(md) {
+        background-size: 45%;
+    }
+
+    @include media-breakpoint-down(md) {
+        min-height: 100vh - $mobile_header_height - $mobile_footer_height;
+    }
+}
+
+.container.content {
+    
+    pointer-events: auto;
+    
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    @include media-breakpoint-up(md) {
+        width: 50%;
+        padding: 1rem 2rem;
+    }
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    background: darken(rgba($text_background_color, 0.83), 7%);
+    // background: linear-gradient(12deg, darken(rgba($text_background_color, 0.78), 20%), 
+    //                                   rgba($text_background_color, 0.78)); // darken(saturate(rgba($antique-brass, 0.4), 30%), 50%);
+    box-shadow: 0 0 2rem darken(rgba($text_background_color, 0.7), 60%);
+
+    border-radius: 6px;
+
+    @include media-breakpoint-down(md) {
+        max-width: 95%;
+    }
+}
+
+header, footer {
+    pointer-events: auto;
+}
+
+header {
+    background: linear-gradient(0deg, $header-dark-blue, rgba($header-dark-blue, 0.2));
+    background-attachment: scroll;
+    
+    width: 100%;
+    min-height: $header_height;
+
+    @include media-breakpoint-down(md) {
+        min-height: $mobile_header_height;
+    }
+
+    box-shadow: 0 0 2rem darken($middle-blue-purple, 30%);
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+footer {
+    min-height: $footer_height;
+
+    color: $champagne-pink;
+
+    a { 
+        @include transition(color 0.15s ease-in-out);
+
+        color: $darkmode_hyperlink_color; 
+        
+        &:hover {
+            color: $darkmode_hyperlink_hover_color;
+        }
+    }
+
+    background: linear-gradient(180deg, rgba($black-coffee, 0.95), rgba($black-coffee, 0.8));
+    background-position-y: center;
+
+    @include media-breakpoint-down(md) {
+        min-height: $mobile_footer_height;
+    }
+
+    width: 100%;
+    z-index: -1;
+
+    padding-top: 2rem;
+}
+
+p img {
+    border-radius: 5px;
+    margin: 0.5rem 1.5rem;
+
+    &.float-right,
+    &.float-left {
+        // on tiny display actually ignore float
+        float: none;
+        margin: 2.2rem 10%;
+        width: 80%;
+
+        @include media-breakpoint-up(md) {
+            margin: 1rem 0.5rem;
+            max-width: 25%;
+            max-height: 80%;
+        }
+    }
+
+    &.float-left {
+        @include media-breakpoint-up(md) {
+            float: left;
+        }
+    }
+
+    &.float-right {
+        @include media-breakpoint-up(md) {
+            float: right;
+        }
+    }
+
+}
+
+.vertical-centered {
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-down(md) {
+        flex-direction: column;
+    }
+}
+
+.link-collection {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 80%;
+
+    span {
+        margin: 0 0.4rem;
+    }
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+hr {
+    width: 66%;
+    border-top: 1px dashed desaturate(lighten($middle-blue-purple, 15%), 20%);
+}
