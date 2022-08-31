@@ -5,7 +5,7 @@ block content
   section#about
     h2: strong Hello there!
     .vertical-centered.mx-3
-      +image_frame_mixin(require('../assets/images/kittycat.jpg'))(class='w3-circle')
+      +image_frame_mixin(require('../assets/images/kittycat.jpg'))(class='circle')
       p.ml-3.mt-3 I am an aspiring <strong>code geezer</strong>, pleez hire me 🙏
     
     <br>
@@ -16,17 +16,16 @@ block content
   hr
 
   section#code
+    h3 ~Projects~
     include:markdown-it(linkify, html) ./markdown/code.md
-    h3 ~Code~
     p Look at all these beautiful instruction sets i've geezered!
     p.ml-3: a(href='https://www.youtube.com/watch?v=oHg5SJYRHA0') *theoretically a github link*
 
   hr
 
   section#contact
-    h3 Wanna get in touch??
+    h3 Links:
     .link-collection
-      span: a(href='google.com') linkedIn
-      span: a(href='google.com') wechat? idk rofl
-      span blahblah
-      span lorem ipsum
+      span: a(href='https://www.linkedin.com/in/pedro-perez-8673b0189/') linkedIn
+      span: a(href='https://github.com/PAPDR') GitHub
+
