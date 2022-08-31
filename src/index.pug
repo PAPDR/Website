@@ -12,12 +12,11 @@ block content
 
     include:markdown-it(linkify, html) ./markdown/example.md
 
-    :markdown-it
-      this is how you write inline markdown.
 
   hr
 
   section#code
+    include:markdown-it(linkify, html) ./markdown/code.md
     h3 ~Code~
     p Look at all these beautiful instruction sets i've geezered!
     p.ml-3: a(href='https://www.youtube.com/watch?v=oHg5SJYRHA0') *theoretically a github link*
