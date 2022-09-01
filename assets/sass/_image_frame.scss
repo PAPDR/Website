@@ -26,10 +26,17 @@
         filter: drop-shadow(0 0 0.5rem $black-coffee)
     }
 
+    &.center_square {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
 
     @include media-breakpoint-down(sm) {
         &.square {
-            width: 80vw; 
+            width: 80vw;
             height: 80vw;
         }
     }
