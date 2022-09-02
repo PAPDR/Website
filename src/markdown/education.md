@@ -4,13 +4,15 @@ I am currently pursuing a BS in Computer Science at Columbia University with a f
 
 During my spare time I work on small video game projects.
 
-Classes I have taken:
 
-- Data Structures
-- Systems Programming
-- 
-- The heck
-- __You want!__
+## Education:
+
+###Columbia
+**Relevant Coursework:** Data Structures in Java, Introduction to Computing for Engineers and Applied Scientists 
+(Python), Multivariable Calculus for Engineers and Applied Scientist, Advanced Programming (Systems 
+Programming in C for UNIX environments) , Computer Science Theory, Discrete Mathematics, Computational 
+Linear Algebra, Fundamentals of Computer Science
+
 
 *And it will show up here.*
 
