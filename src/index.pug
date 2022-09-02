@@ -8,14 +8,12 @@ block content
       +image_frame_mixin(require('../assets/images/kittycat.jpg'))(class='center_square')
     
     <br>
-
-    include:markdown-it(linkify, html) ./markdown/example.md
     include:markdown-it(linkify, html) ./markdown/education.md
 
   hr
 
   section#code
-    h3 ~Projects~
+    h3 Projects
     include:markdown-it(linkify, html) ./markdown/code.md
     p Look at all these beautiful instruction sets i've geezered!
     p.ml-3: a(href='https://www.youtube.com/watch?v=oHg5SJYRHA0') *theoretically a github link*
