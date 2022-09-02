@@ -1,5 +1,5 @@
-### This is very important.
-
+### Hello! I am Pedro Perez. Currently I am studying Computer Science at Columbia University.
+### My current interests are programming and making games.
 ## It is now possible to write content in Markdown!! Hi!
 
 This is faster than having to hardcode specially-formatted HTML.

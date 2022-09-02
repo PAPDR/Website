@@ -3,13 +3,14 @@ include image_frame_mixin.pug
 
 block content 
   section#about
+    h2: strong Hello there!
     .vertical-centered.mx-3
       +image_frame_mixin(require('../assets/images/kittycat.jpg'))(class='center_square')
     
     <br>
-    include:markdown-it(linkify, html) ./markdown/education.m
-    include:markdown-it(linkify, html) ./markdown/example.md
 
+    include:markdown-it(linkify, html) ./markdown/example.md
+    include:markdown-it(linkify, html) ./markdown/education.md
 
   hr
 
