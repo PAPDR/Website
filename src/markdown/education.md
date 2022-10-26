@@ -17,6 +17,7 @@ Linear Algebra, Fundamentals of Computer Science, Artificial Intelligence, User 
 
 I am Junior studying computer science. Currently my academic interests are in Artifial Intelligence, studying the basics
 to learn more about Machine Learning. However, in my spare time I am working on game development working on Unity and Godot projects.
-My initial interest in Computer Science comes from wanting to know
+My initial interest in Computer Science comes from wanting to know how video games are made, and I have since progressed to focusing on a combination of software
+used in games and development and applications of intellgent systems.
 
 
