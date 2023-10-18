@@ -1,6 +1,6 @@
 ## Education
 
-I am currently pursuing a BS in Computer Science at Columbia University with a focus on Artificial Intelligence.
+I am currently pursuing a BS in Computer Science at Columbia University.
 
 ### Columbia
 
@@ -15,8 +15,7 @@ Linear Algebra, Fundamentals of Computer Science, Artificial Intelligence, User 
 
 ## About Me
 
-I am Junior studying computer science. Currently my academic interests are in Artifial Intelligence, studying the basics
-to learn more about Machine Learning. However, in my spare time I am working on game development working on Unity and Godot projects.
+I am a Senior studying computer science. Currently my academic interests are in intellegent systems and computer graphics. In my spare time I work on small game development projects, primarily on Unity.
 My initial interest in Computer Science comes from wanting to know how video games are made, and I have since progressed to focusing on a combination of software
 used in games and development and applications of intellgent systems.
 
