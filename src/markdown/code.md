@@ -1,3 +1,5 @@
+Note: Some projects can only be shown upon request.
+
 [Game: Alstroemeria](https://cugamedev.itch.io/alstroemeria)
 Game made alongside the Columbia Game Dev Club for our yearly game jam.
 
